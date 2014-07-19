@@ -1,8 +1,10 @@
 <div ng-controller='BlogCtrl'>
-
+<input type='text' placeholder='search' ng-model='searchInput'></input>
+<span>{{searchInput}}</span>
 <div ng-repeat='things in blogPosts'>
 <h1> {{things.title}} </h1>
     {{things.body}}
-<div> - {{things.author}} </div>   
+  </br>
+- {{things.author}} 
 
 </div>

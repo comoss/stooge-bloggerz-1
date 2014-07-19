@@ -22,12 +22,10 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
-      <div class="header">
+      <div class="header" ng-controller="BlogCtrl">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/Larry">Larry</a></li>
-          <li><a ng-href="#/Curly">Curly</a></li>
-          <li><a ng-href="#/Moe">Moe</a></li>
+          <li ng-repeat='author in authors'><a ng-href="#/">{{author}}</a></li>
         </ul>
         <h3 class="text-muted">stoogeBloggerz</h3>
       </div>
@@ -76,6 +74,8 @@
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/blog.js"></script>
         <script src="scripts/services/posts.js"></script>
+        <script src="scripts/services/blog.js"></script>
+        <script src="scripts/services/authors.js"></script>
         <!-- endbuild -->
 </body>
 </html>
