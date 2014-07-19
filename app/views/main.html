@@ -1,1 +1,8 @@
-<div><h1>Latest Posts</h1></div>
+<div ng-controller='BlogCtrl'>
+
+<div ng-repeat='things in blogPosts'>
+<h1> {{things.title}} </h1>
+    {{things.body}}
+<div> - {{things.author}} </div>   
+
+</div>
